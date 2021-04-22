@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define MAX 1000
+
+int main(){
+     int n;
+    scanf("%d", &n);
+      int intiRow=n-1;
+      int initCol=1-n;
+      for(int i=intiRow; i>-n;i--){
+          for (int j = initCol; j <n ; ++j)
+          {    
+              // int distance=(abs(i)>abs(j)?abs(i):abs(j));
+              printf("%d ",(abs(i)>abs(j)?abs(i)+1:abs(j)+1) );
+          }
+          puts("");
+      }
+    return 0;      
+
+}
